@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - 06 Carte profil</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+            background-color: gray;
+        }
+
+        .card{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: lightblue;
+            width: 50vw;
+            max-width: 600px;
+        }        
+        
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content h2,
+        .content p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px){
+            .card{
+                flex-direction: column;
+                text-align: center;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="assets/image.jpg" alt="Photo de profil">
+        <div class="content">
+            <h2>Nom Prénom</h2>
+            <p>Petite description du profil.</p>
+        </div>
+    </div>
+</body>
+</html>
