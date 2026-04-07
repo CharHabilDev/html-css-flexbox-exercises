@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 07 - Colonnes inégales</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        .layout{
+            display: flex;
+            gap: 10px;
+        }
+
+        aside,
+        main{
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        aside{
+            flex: 1;
+        }
+
+        main{
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside>Sidebar gauche</aside>
+        <main>Contenu principal</main>
+        <aside>Sidebar droite</aside>
+    </div>
+</body>
+</html>
