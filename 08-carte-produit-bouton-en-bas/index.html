@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - 08 Carte produit avec bouton collé en bas</title>
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        img{
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card{
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            min-height: 400px;
+            background-color: lightblue;
+            gap: 10px;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .content h2,
+        .content p{
+            margin-top: 0;
+        }
+
+        .price{
+            margin-bottom: 10px;
+        }
+
+        button{
+            width: 140px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="assets/image.jpg" alt="Photo du produit">
+        <div class="content">
+            <h2>Titre du produit</h2>
+            <p>Petite description du produit.</p>
+            <p class="price">29,99 €</p>
+            <button>Acheter</button>
+        </div>
+    </div>
+</body>
+</html>
