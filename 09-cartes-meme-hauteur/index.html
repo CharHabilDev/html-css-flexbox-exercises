@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - 09 Liste de cartes de même hauteur</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        .cards{
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+        }
+
+        .card{
+            border: 2px solid tomato;
+            padding: 10px;
+            background-color: lightblue;
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="cards">
+    <div class="card">
+        <p>Contenu court</p>
+    </div>
+    <div class="card">
+        <p>Contenu un peu plus long pour créer une différence de hauteur apparente.</p>
+    </div>
+    <div class="card">
+        <p>Contenu encore plus long pour tester l’alignement et vérifier que toutes les cartes gardent la même hauteur malgré des textes différents.</p>
+    </div>
+</div>  
+</body>
+</html>
