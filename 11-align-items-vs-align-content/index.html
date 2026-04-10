@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 11 - Différence entre align-items et align-content</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        section{
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        .container{
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border: 2px solid black;
+        }
+
+        .items-test{
+            align-items: center;
+        }
+
+        .content-test{
+            align-content: center;
+        }
+
+        .item{
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .grand{
+            height: 140px;
+        }
+
+        .moyen{
+            height: 100px;
+        }
+
+        .petit{
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Test avec align-items</h2>
+        <div class="container items-test">
+            <div class="item grand">1</div>
+            <div class="item petit">2</div>
+            <div class="item moyen">3</div>
+            <div class="item grand">4</div>
+            <div class="item petit">5</div>
+            <div class="item moyen">6</div>
+            <div class="item grand">7</div>
+            <div class="item petit">8</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Test avec align-content</h2>
+        <div class="container content-test">
+            <div class="item moyen">1</div>
+            <div class="item moyen">2</div>
+            <div class="item moyen">3</div>
+            <div class="item moyen">4</div>
+            <div class="item moyen">5</div>
+            <div class="item moyen">6</div>
+            <div class="item moyen">7</div>
+            <div class="item moyen">8</div>
+        </div>
+    </section>
+</body>
+</html>
