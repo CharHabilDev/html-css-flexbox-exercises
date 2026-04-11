@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - 16 Page complète en Flexbox</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        .page{
+            min-height: 100vh;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header,
+        footer{
+            display: flex;
+            min-height: 100px;
+            border: 1px solid;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .main-layout{
+            border: 1px solid;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            gap: 50px;
+            padding: 10px;
+        }
+
+        aside{
+            width: 200px;
+        }
+
+        .content{
+            flex: 1;
+        }
+
+        footer{
+            display: flex;
+            min-height: 100px;
+            border: 1px solid;
+            align-items: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px){
+            .main-layout{
+                flex-direction: column;
+            }
+
+            aside{
+                width: auto;
+            }
+
+            header,
+            footer{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>Header</header>
+
+        <main class="main-layout">
+            <aside>Sidebar</aside>
+            <section class="content">Contenu principal</section>
+        </main>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
