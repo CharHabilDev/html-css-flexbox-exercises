@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - 14 Section services</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        .services{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1;
+            border: 1px solid black;
+            padding: 5px 10px;
+            background-color: lightcyan;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        @media (max-width:600px){
+            .services{
+                flex-direction: column;
+            }
+
+            .card{
+                flex: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="services">
+        <article class="card">
+            <h2>Développement web</h2>
+            <p>Création de sites modernes et responsives.</p>
+        </article>
+
+        <article class="card">
+            <h2>Design UI</h2>
+            <p>Interfaces propres, lisibles et agréables à utiliser.</p>
+        </article>
+
+        <article class="card">
+            <h2>Maintenance</h2>
+            <p>Correction de bugs et amélioration continue.</p>
+        </article>
+    </section>
+</body>
+</html>
