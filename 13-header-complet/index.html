@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - 13 Header complet</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        header{
+            border: 1px solid;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo,
+        menu,
+        .actions{
+            flex: 1;
+        }
+
+        .logo{
+            text-align: left;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .actions{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .actions button{
+            max-width: 120px;
+            padding: 5px;
+        }
+
+        .menu a{
+            color: black;
+            text-decoration: none;
+        }
+
+        @media (max-width:600px){
+            header{
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .logo,
+            .menu,
+            button{
+                flex: unset;
+            }
+
+            .menu{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .actions{
+                justify-content: center;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Logo</div>
+
+        <nav class="menu">
+            <a href="#">Accueil</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="actions">
+            <button>S’inscrire</button>
+        </div>
+    </header>
+</body>
+</html>
